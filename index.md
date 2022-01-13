@@ -16,3 +16,6 @@ Here Is a List:
 2. two
 3. three
 
+
+Link to the lab reports:
+* [Lab Report 1](https://kqwqk.github.io/cse15l-lab/lab-report-1-week-2.html)
