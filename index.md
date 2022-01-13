@@ -18,4 +18,6 @@ Here Is a List:
 
 
 Link to the lab reports:
-* [Lab Report 1](https://kqwqk.github.io/cse15l-lab/lab-report-1-week-2.html)
+
+* [Lab Report 1.1](lab-report-1-week-2.html)
+* [Lab Report 1.2](https://kqwqk.github.io/cse15l-lab/lab-report-1-week-2.html)
