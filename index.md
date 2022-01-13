@@ -7,3 +7,12 @@ A Link to [test](test.md)
 
 A Link to [website](https://kqwqk.github.io/cse15l-lab/)
 
+Here Is a List:
+* Thing 1
+* Thing 2
+* Thing 3
+
+1. one
+2. two
+3. three
+
