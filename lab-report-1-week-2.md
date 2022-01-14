@@ -8,7 +8,7 @@
 2. [Remotely Connecting](#second-step)
 3. [Trying Some Commands](#third-step)
 4. [Moving Files with `scp`](#fourth-step)
-5. Setting an SSH Key
+5. [Setting an SSH Key](#fifth-step)
 6. Optimizing Remote Running
 
 ---
@@ -46,12 +46,16 @@
   <img width="430" height="200" src="images/step2-2.PNG">
 </p>
 
-* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal, it will show up something like this. Type yes, and your password for first time login.
+* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal. Here is how you open terminal in VScode.
+<p align="center">
+  <img width="430" height="200" src="images/step2-3.PNG">
+</p>
+
+* it will show up something like this. Type yes, and your password for first time login.
+
 
 
 ```
-# Example Code Block
-
 ⤇ ssh cs15lwi22and@ieng6.ucsd.edu
 The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
@@ -82,7 +86,7 @@ Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
 - `touch <filename>`, for creating files, such as `touch file.txt`. 
 - `exit`, exit the remote `ieng6` server.
 
-Examples of Using the command: 
+## Examples of Using the command: 
 ```
 [cs15lwi22and@ieng6-203]:~:56$ ls      # Listing Files
 WhereAmI.class  WhereAmI.java  perl5
@@ -105,4 +109,49 @@ dylansmcbookpro:/ yujiwei$
 ```
 # Fourth Step
 > you may have some java files that you want to run on the `ieng6` server, copy that file into the remote server using `scp` command.
+
+* Format: `scp <filename> <accountid>:~/`
+
+## Examples of copying file:
+
+If we want to copy a file named `test.java` and has following content:
+```
+class test{
+        public static void main(String[] args){
+                System.out.println(System.getProperty("os.name"));
+                System.out.println(System.getProperty("user.name"));
+                System.out.println(System.getProperty("user.home"));
+                System.out.println(System.getProperty("user.dir"));
+        }
+}
+```
+
+```
+dylansmcbookpro:Desktop yujiwei$ ls #on local server
+CSE12
+CSE15L
+CSE20
+Folder
+Math 20B
+test.java
+dylansmcbookpro:Desktop yujiwei$ scp test.java cs15lwi22and@ieng6.ucsd.edu:~/
+test.java                                            100%  195     5.7KB/s   00:00
+dylansmcbookpro:Desktop yujiwei$
+```
+
+## Compile and run on the remote server
+```
+[cs15lwi22and@ieng6-203]:~:79$ ls # on remote sever, I'm already logged in.
+WhereAmI.class  WhereAmI.java  folder  perl5  test.java
+[cs15lwi22and@ieng6-203]:~:80$ javac test.java
+[cs15lwi22and@ieng6-203]:~:81$ java test
+Linux
+cs15lwi22and
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
+[cs15lwi22and@ieng6-203]:~:82$
+```
+
+# Fifth Step
+> Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
