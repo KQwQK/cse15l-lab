@@ -9,7 +9,7 @@
 3. [Trying Some Commands](#third-step)
 4. [Moving Files with `scp`](#fourth-step)
 5. [Setting an SSH Key](#fifth-step)
-6. Optimizing Remote Running
+6. [Optimizing Remote Running](#sixth-step)
 
 ---
 
@@ -125,7 +125,7 @@ class test{
         }
 }
 ```
-
+Then, in your local terminal, do the scp command line.
 ```
 dylansmcbookpro:Desktop yujiwei$ ls #on local server
 CSE12
@@ -141,7 +141,7 @@ dylansmcbookpro:Desktop yujiwei$
 
 ## Compile and run on the remote server
 ```
-[cs15lwi22and@ieng6-203]:~:79$ ls # on remote sever, I'm already logged in.
+[cs15lwi22and@ieng6-203]:~:79$ ls # This is on the remote sever, I'm already logged in.
 WhereAmI.class  WhereAmI.java  folder  perl5  test.java
 [cs15lwi22and@ieng6-203]:~:80$ javac test.java
 [cs15lwi22and@ieng6-203]:~:81$ java test
@@ -155,3 +155,5 @@ cs15lwi22and
 # Fifth Step
 > Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
+
+# Sixth Step
