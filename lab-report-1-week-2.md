@@ -155,5 +155,97 @@ cs15lwi22and
 # Fifth Step
 > Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
+* Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
+
+```
+dylansmcbookpro:/ yujiwei$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/yujiwei/.ssh/id_rsa): /Users/yujiwei/.ssh/id_rsa
+/Users/yujiwei/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/yujiwei/.ssh/id_rsa.
+Your public key has been saved in /Users/yujiwei/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Vq2R+Rhf49JPGaqwmtPnXbeE5HNaVLLqAbtF3FoPaCM yujiwei@dylansmcbookpro.lan
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|           +     |
+|          * . +..|
+|         . O *.++|
+|        S.E XoBo.|
+|       .  o*+*o= |
+|        ....=+ =+|
+|       .o. =..B o|
+|       o. +..o . |
++----[SHA256]-----+
+
+```
+
+* Once created, create a dot file named `.ssh` on the remote server, log out, and then copy the `id_rsa.pub`(the public key) into the `.ssh` file which is locat ed in the remote server
+
+
+## Making .ssh Directory
+```
+dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu
+Password:
+Last login: Thu Jan 13 21:47:03 2022 from 071-083-152-013.res.spectrum.com
+quota: No filesystem specified.
+Hello cs15lwi22and, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status
+Hostname     Time    #Users  Load  Averages
+ieng6-201   21:45:01   29  2.13,  2.43,  2.45
+ieng6-202   21:45:01   20  2.33,  2.54,  2.44
+ieng6-203   21:45:01   17  2.26,  2.19,  2.22
+
+
+Thu Jan 13, 2022  9:48pm - Prepping cs15lwi22
+[cs15lwi22and@ieng6-203]:~:105$ mkdir .ssh
+[cs15lwi22and@ieng6-203]:~:106$ exit
+logout
+Connection to ieng6.ucsd.edu closed.
+```
+
+## Copying the public key
+```
+dylansmcbookpro:/ yujiwei$ scp /Users/yujiwei/.ssh/id_rsa.pub cs15lwi22and@ieng6.ucsd.edu:~/.ssh/authorized_keys
+Password:
+id_rsa.pub                                100%  581    19.5KB/s   00:00
+dylansmcbookpro:/ yujiwei$
+```
+
+
+* Then you can log in without password !
+```
+dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu
+Last login: Thu Jan 13 21:51:49 2022 from 071-083-152-013.res.spectrum.com
+quota: No filesystem specified.
+Hello cs15lwi22and, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status
+Hostname     Time    #Users  Load  Averages
+ieng6-201   21:55:01   30  2.50,  2.39,  2.40
+ieng6-202   21:55:01   21  2.59,  2.82,  2.70
+ieng6-203   21:55:02   19  2.15,  2.33,  2.29
+
+
+Thu Jan 13, 2022  9:56pm - Prepping cs15lwi22
+```
+
 
 # Sixth Step
+> Here are some extra tips for you to run the remote server.
+
+* Using `ssh <accountid> "<command>"` to run a one line command on the remote server.
+
+*
+
+*
+
