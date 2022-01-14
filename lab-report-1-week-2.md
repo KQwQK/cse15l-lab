@@ -37,4 +37,4 @@
 
 * After that, or if you are not on Windows, look up your CSE15L account using the [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) website.
 
-* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu` in your terminal.
+* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal, it will show up something like this. Type yes, and your password for firs time login.
