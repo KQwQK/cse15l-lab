@@ -6,7 +6,7 @@
 
 1. [Installing VScode](#first-step)
 2. [Remotely Connecting](#second-step)
-3. Trying Some Commands
+3. [Trying Some Commands](#third-step)
 4. Moving Files with `scp`
 5. Setting an SSH Key
 6. Optimizing Remote Running
@@ -45,7 +45,8 @@
   <img width="430" height="100" src="images/step2-2.PNG">
 </p>
 
-* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal, it will show up something like this. Type yes, and your password for firs time login.
+* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal, it will show up something like this. Type yes, and your password for first time login.
+
 
 ```
 # code block
@@ -67,6 +68,7 @@ ieng6-201   20:05:01   28  2.32,  2.78,  2.65
 ieng6-202   20:05:01   19  2.05,  2.12,  2.16
 ieng6-203   20:05:01   18  2.38,  2.31,  2.33
 
-
 Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
+```
 
+# Third Step
