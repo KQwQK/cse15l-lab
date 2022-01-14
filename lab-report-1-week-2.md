@@ -155,14 +155,12 @@ cs15lwi22and
 # Fifth Step
 > Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
-* Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
+> Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
 
 ```
-dylansmcbookpro:/ yujiwei$ ssh-keygen
+dylansmcbookpro:/ yujiwei$ ssh-keygen #key pair generator
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/yujiwei/.ssh/id_rsa): /Users/yujiwei/.ssh/id_rsa
-/Users/yujiwei/.ssh/id_rsa already exists.
-Overwrite (y/n)? y
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /Users/yujiwei/.ssh/id_rsa.
@@ -184,7 +182,7 @@ The key's randomart image is:
 
 ```
 
-* Once created, create a dot file named `.ssh` on the remote server, log out, and then copy the `id_rsa.pub`(the public key) into the `.ssh` file which is locat ed in the remote server
+> Once created, create a dot file named `.ssh` on the remote server, log out, and then copy the `id_rsa.pub`(the public key) into the `.ssh` file which is locat ed in the remote server
 
 
 ## Making .ssh Directory
@@ -205,13 +203,13 @@ ieng6-203   21:45:01   17  2.26,  2.19,  2.22
 
 
 Thu Jan 13, 2022  9:48pm - Prepping cs15lwi22
-[cs15lwi22and@ieng6-203]:~:105$ mkdir .ssh
+[cs15lwi22and@ieng6-203]:~:105$ mkdir .ssh ##making directory called .ssh
 [cs15lwi22and@ieng6-203]:~:106$ exit
 logout
 Connection to ieng6.ucsd.edu closed.
 ```
 
-## Copying the public key
+## Copying the public key using `scp`
 ```
 dylansmcbookpro:/ yujiwei$ scp /Users/yujiwei/.ssh/id_rsa.pub cs15lwi22and@ieng6.ucsd.edu:~/.ssh/authorized_keys
 Password:
@@ -220,7 +218,7 @@ dylansmcbookpro:/ yujiwei$
 ```
 
 
-* Then you can log in without password !
+## Then you can log in without password !
 ```
 dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu
 Last login: Thu Jan 13 21:51:49 2022 from 071-083-152-013.res.spectrum.com
