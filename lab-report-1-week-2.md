@@ -22,13 +22,13 @@
 * Click the blue button to install, and make sure to choose the right software for your operating system.
 
 <p align="center">
-  <img width="430" height="300" src="step1.png">
+  <img width="430" height="300" src="https://github.com/KQwQK/cse15l-lab-reports/blob/main/step1.PNG">
 </p>
 
 * You should see a page same as this, that means you've done it correctly.
 
 <p align="center">
-  <img width="430" height="300" src="step3.png">
+  <img width="430" height="300" src="https://github.com/KQwQK/cse15l-lab-reports/blob/main/step1-1.PNG">
 </p>
 
 ---
@@ -39,4 +39,4 @@
 
 * After that, or if you are not on Windows, look up your CSE15L account using the [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) website.
 
-* You should see a page same as this, that means you've done it correctly.
+* After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu` in your terminal.
