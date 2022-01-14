@@ -110,7 +110,7 @@ dylansmcbookpro:/ yujiwei$
 # Fourth Step
 > you may have some java files that you want to run on the `ieng6` server, copy that file into the remote server using `scp` command.
 
-* Format: `scp <filename> <accountid>:~/`
+* Format: `scp <filename> <accountid>: <remote-server-location>`
 
 ## Examples of copying file:
 
@@ -134,7 +134,7 @@ CSE20
 Folder
 Math 20B
 test.java
-dylansmcbookpro:Desktop yujiwei$ scp test.java cs15lwi22and@ieng6.ucsd.edu:~/
+dylansmcbookpro:Desktop yujiwei$ scp test.java cs15lwi22and@ieng6.ucsd.edu:~/ # save to the home directory of the remote server.
 test.java                                            100%  195     5.7KB/s   00:00
 dylansmcbookpro:Desktop yujiwei$
 ```
@@ -217,8 +217,8 @@ id_rsa.pub                                100%  581    19.5KB/s   00:00
 dylansmcbookpro:/ yujiwei$
 ```
 
-
 ## Then you can log in without password !
+
 ```
 dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu
 Last login: Thu Jan 13 21:51:49 2022 from 071-083-152-013.res.spectrum.com
@@ -243,7 +243,7 @@ Thu Jan 13, 2022  9:56pm - Prepping cs15lwi22
 
 * Using `ssh <accountid> "<command>"` to run a one line command on the remote server.
 
-*
+* You can also use semicolon ";" to run multiple commands on a single command line.
 
-*
+* ↑ also recall the last command that was typed in the terminal.
 
