@@ -76,7 +76,7 @@ ieng6-203   20:05:01   18  2.38,  2.31,  2.33
 Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
 ```
 
-# Third Step
+# **Third Step**
 > Here is some commands that you could try out. 
 - `ls` , short for "list", listing all the files in the current directory
 - `ls -a` , for listing all the files including the "dot files" in the current directory
@@ -107,7 +107,7 @@ logout
 Connection to ieng6.ucsd.edu closed.
 dylansmcbookpro:/ yujiwei$
 ```
-# Fourth Step
+# **Fourth Step**
 > you may have some java files that you want to run on the `ieng6` server, copy that file into the remote server using `scp` command.
 
 * Format: `scp <filename> <accountid>: <remote-server-location>`
@@ -152,7 +152,7 @@ cs15lwi22and
 [cs15lwi22and@ieng6-203]:~:82$
 ```
 
-# Fifth Step
+# **Fifth Step**
 > Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
 * Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
@@ -238,12 +238,36 @@ Thu Jan 13, 2022  9:56pm - Prepping cs15lwi22
 ```
 
 
-# Sixth Step
+# **Sixth Step**
 > Here are some extra tips for you to run the remote server.
 
-* Using `ssh <accountid> "<command>"` to run a one line command on the remote server.
+* Using `ssh <accountid> "<command>"` to run a one line command on the remote server. Examples:
 
-* You can also use semicolon ";" to run multiple commands on a single command line.
+```
+dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "ls"
+WhereAmI.class
+WhereAmI.java
+folder
+perl5
+test.class
+test.java
+dylansmcbookpro:/ yujiwei$
+```
+
+* You can also use semicolon ";" to run multiple commands on a single command line. Examples:
+```
+dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "pwd;ls"
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
+WhereAmI.class
+WhereAmI.java
+folder
+perl5
+test.class
+test.java
+```
 
 * ↑ also recall the last command that was typed in the terminal.
 
+---
+
+# **THE END !**
