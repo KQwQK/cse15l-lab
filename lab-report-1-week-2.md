@@ -14,13 +14,18 @@
 6. Optimizing Remote Running
 ---
 
-> First Step:
-* Go to the Visual Studio Code offical website using this [LINK]( https://code.visualstudio.com/).
+<font size="6"> **First Step** </font> 
 
-* Click the button to install, make sure to choose the right softwarer for your operating system.
+>* Go to the Visual Studio Code offical website using this [LINK]( https://code.visualstudio.com/).
 
-* You should see a page same as this
+> *Click the blue button to install, and make sure to choose the right softwarer for your operating system.
 <p align="center">
-  <img width="400" height="300" src="step1.png">
+  <img width="430" height="300" src="step1.png">
+</p>
+
+>* You should see a page same as this
+
+<p align="center">
+  <img width="430" height="300" src="step3.png">
 </p>
 
