@@ -155,7 +155,7 @@ cs15lwi22and
 # Fifth Step
 > Every time you login it requires you to type in the password, if we set up a SSH key, it won't ask you for password and it will save you a lot of time.
 
-> Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
+* Create a key pairs using the `ssh-keygen`, with the private key(you should not give this key to others) in the file `id_rsa`, and the public key in file `id_rsa.pub`. **Extra step needed if you are a Windows user [LINK](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).**
 
 ```
 dylansmcbookpro:/ yujiwei$ ssh-keygen #key pair generator
