@@ -83,8 +83,26 @@ Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
 - `exit`, exit the remote `ieng6` server.
 
 Examples of Using the command: 
-
-
+```
+[cs15lwi22and@ieng6-203]:~:56$ ls      # Listing Files
+WhereAmI.class  WhereAmI.java  perl5
+[cs15lwi22and@ieng6-203]:~:57$ ls -a   # Listing Files including the dot files
+.   .bash_history  .bashrc  .config  .kshrc  .locallogin  .modulesbegenv  .procmailrc  .ssh       .zshenv  WhereAmI.class  perl5
+..  .bash_profile  .cache   .cshrc   .local  .login       .motd           .profile     .zprofile  .zshrc   WhereAmI.java
+[cs15lwi22and@ieng6-203]:~:58$ mkdir folder   # creating a new directory
+[cs15lwi22and@ieng6-203]:~:59$ ls  
+WhereAmI.class  WhereAmI.java  folder  perl5
+[cs15lwi22and@ieng6-203]:~:60$ cd folder/   # changing directory to the new folder
+[cs15lwi22and@ieng6-203]:folder:61$ pwd   # current directory
+/home/linux/ieng6/cs15lwi22/cs15lwi22and/folder
+[cs15lwi22and@ieng6-203]:folder:62$ touch words.txt # create files
+[cs15lwi22and@ieng6-203]:folder:63$ ls
+words.txt
+[cs15lwi22and@ieng6-203]:folder:64$ exit # quit
+logout
+Connection to ieng6.ucsd.edu closed.
+dylansmcbookpro:/ yujiwei$
+```
 # Fourth Step
 > you may have some java files that you want to run on the `ieng6` server, copy that file into the remote server using `scp` command.
- 
+
