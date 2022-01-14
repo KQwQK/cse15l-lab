@@ -1,7 +1,5 @@
 # **Lab Report 1**
 
-
-
 > *This is an introduction of how to login the `"ieng6"` account.* 
 
 **Table of Contents**
@@ -22,13 +20,13 @@
 * Click the blue button to install, and make sure to choose the right software for your operating system.
 
 <p align="center">
-  <img width="430" height="300" src="https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/step1.PNG">
+  <img width="430" height="300" src="images/step1.PNG">
 </p>
 
 * You should see a page same as this, that means you've done it correctly.
 
 <p align="center">
-  <img width="430" height="300" src="https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/step1-1.PNG">
+  <img width="430" height="300" src="images/step1-1.PNG">
 </p>
 
 ---
