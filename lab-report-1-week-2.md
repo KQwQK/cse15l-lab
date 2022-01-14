@@ -7,7 +7,7 @@
 1. [Installing VScode](#first-step)
 2. [Remotely Connecting](#second-step)
 3. [Trying Some Commands](#third-step)
-4. Moving Files with `scp`
+4. [Moving Files with `scp`](#fourth-step)
 5. Setting an SSH Key
 6. Optimizing Remote Running
 
@@ -74,11 +74,17 @@ Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
 
 # Third Step
 > Here is some commands that you could try out. 
-- `ls` 
-- `ls -a`
-- `pwd`
-- `cd`
-- `touch`
-- `ls <directory>`
-- `exit`
+- `ls` , short for "list", listing all the files in the current directory
+- `ls -a` , for listing all the files including the "dot files" in the current directory
+- `ls <directory>` list all the file in directory provided
+- `pwd` , showing the current working directory
+- `cd` , short for "change directory", it can move you to another directory
+- `touch <filename>`, for creating files, such as `touch file.txt`. 
+- `exit`, exit the remote `ieng6` server.
 
+Examples of Using the command: 
+
+
+# Fourth Step
+> you may have some java files that you want to run on the `ieng6` server, copy that file into the remote server using `scp` command.
+ 
