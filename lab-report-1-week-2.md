@@ -43,14 +43,14 @@
 * After that, or if you are not on Windows, look up your CSE15L account using the [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) website.
 
 <p align="center">
-  <img width="430" height="100" src="images/step2-2.PNG">
+  <img width="430" height="200" src="images/step2-2.PNG">
 </p>
 
 * After Lookup, type in `ssh cs15lwi22and@ieng6.ucsd.edu`(with your account id) in the Vscode terminal, it will show up something like this. Type yes, and your password for first time login.
 
 
 ```
-# code block
+# Example Code Block
 
 ⤇ ssh cs15lwi22and@ieng6.ucsd.edu
 The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
@@ -73,3 +73,12 @@ Thu Jan 13, 2022  8:07pm - Prepping cs15lwi22
 ```
 
 # Third Step
+> Here is some commands that you could try out. 
+- `ls` 
+- `ls -a`
+- `pwd`
+- `cd`
+- `touch`
+- `ls <directory>`
+- `exit`
+
