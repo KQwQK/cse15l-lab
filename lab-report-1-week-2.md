@@ -267,7 +267,7 @@ cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 ```
-From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server. This requires 4-5 keystrokes to run a file and that is very time consuming. 
+From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server for more local edits. This requires 4-5 keystrokes to run a file and that is very time consuming. 
 
 
 
