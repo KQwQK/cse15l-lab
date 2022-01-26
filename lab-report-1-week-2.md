@@ -242,7 +242,6 @@ Thu Jan 13, 2022  9:56pm - Prepping cs15lwi22
 > Here are some extra tips for you to run the remote server.
 
 * Using `ssh <accountid> "<command>"` to run a one line command on the remote server. Examples:
-
 ```
 dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "ls"
 WhereAmI.class
@@ -253,20 +252,30 @@ test.class
 test.java
 dylansmcbookpro:/ yujiwei$
 ```
+* You can also use semicolon ";" to run multiple commands on a single command line.
+* ↑(up arrow key) also recall the last command that was typed in the terminal.
 
-* You can also use semicolon ";" to run multiple commands on a single command line. Examples:
+
+**If we want to make a local edit to WhereIAm.java, then copying it to the remote server and running it, we can do the following.**
+
+After making Local Edit, If we want to copy and run it at the remote server:
 ```
-dylansmcbookpro:/ yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "pwd;ls"
+Dylans-Mac-Book-Pro:week1 yujiwei$ scp /Users/yujiwei/Desktop/CSE15L/week1/WhereAmI.java cs15lwi22and@ieng6.ucsd.edu:~/ ##One keystroke
+Dylans-Mac-Book-Pro:week1 yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI" ##two keystroke
+Linux
+cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
-WhereAmI.class
-WhereAmI.java
-folder
-perl5
-test.class
-test.java
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
 ```
+From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server. This requires 4-5 keystrokes to run a file and that is very time consuming. 
 
-* ↑ also recall the last command that was typed in the terminal.
+
+
+
+
+
+
+
 
 ---
 
