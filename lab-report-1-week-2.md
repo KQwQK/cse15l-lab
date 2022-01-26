@@ -256,9 +256,12 @@ dylansmcbookpro:/ yujiwei$
 * ↑(up arrow key) also recall the last command that was typed in the terminal.
 
 
+## Making running file remotely more efficient ! 
+
 **If we want to make a local edit to WhereIAm.java, then copying it to the remote server and running it, we can do the following.**
 
-After making Local Edit, If we want to copy and run it at the remote server:
+
+**After making Local Edit, If we want to copy and run it at the remote server:**
 ```
 Dylans-Mac-Book-Pro:week1 yujiwei$ scp /Users/yujiwei/Desktop/CSE15L/week1/WhereAmI.java cs15lwi22and@ieng6.ucsd.edu:~/ ##1 keystroke
 Dylans-Mac-Book-Pro:week1 yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI" ##2 keystrokes
@@ -267,6 +270,9 @@ cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 ```
+
+
+## Conclusion:
 From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server for more local edits. This requires 4-5 keystrokes to run a file and that is very time consuming. See below:
 
 ```
