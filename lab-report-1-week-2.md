@@ -260,15 +260,44 @@ dylansmcbookpro:/ yujiwei$
 
 After making Local Edit, If we want to copy and run it at the remote server:
 ```
-Dylans-Mac-Book-Pro:week1 yujiwei$ scp /Users/yujiwei/Desktop/CSE15L/week1/WhereAmI.java cs15lwi22and@ieng6.ucsd.edu:~/ ##One keystroke
-Dylans-Mac-Book-Pro:week1 yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI" ##two keystroke
+Dylans-Mac-Book-Pro:week1 yujiwei$ scp /Users/yujiwei/Desktop/CSE15L/week1/WhereAmI.java cs15lwi22and@ieng6.ucsd.edu:~/ ##1 keystroke
+Dylans-Mac-Book-Pro:week1 yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI" ##2 keystrokes
 Linux
 cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 /home/linux/ieng6/cs15lwi22/cs15lwi22and
 ```
-From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server for more local edits. This requires 4-5 keystrokes to run a file and that is very time consuming. 
+From using the three tips provided, I can copy and run my file on the remote server with only 2 keystrokes! While if I use the other methods, I need to copy it first, login, compile, and then run the file. At the end you may need to exit the remote server for more local edits. This requires 4-5 keystrokes to run a file and that is very time consuming. See below:
 
+```
+Dylans-Mac-Book-Pro:week1 yujiwei$ scp /Users/yujiwei/Desktop/CSE15L/week1/WhereAmI.java cs15lwi22and@ieng6.ucsd.edu:~/ #1 Keystroke
+WhereAmI.java                                                                   100%  290    42.8KB/s   00:00
+Dylans-Mac-Book-Pro:week1 yujiwei$ ssh cs15lwi22and@ieng6.ucsd.edu #2 Keystrokes
+Hello cs15lwi22and, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status
+Hostname     Time    #Users  Load  Averages
+ieng6-201   11:45:01   27  9.45,  8.07,  7.59
+ieng6-202   11:45:02   15  2.44,  1.94,  1.90
+ieng6-203   11:45:01   18  1.88,  1.97,  1.84
+
+
+Wed Jan 26, 2022 11:47am - Prepping cs15lwi22
+[cs15lwi22and@ieng6-203]:~:107$ ls #3 Keystrokes
+WhereAmI.class  WhereAmI.java  folder  perl5  test.class  test.java
+[cs15lwi22and@ieng6-203]:~:108$ javac WhereAmI.java #4 Keystrokes
+[cs15lwi22and@ieng6-203]:~:109$ java WhereAmI #5 Keystrokes
+Linux
+cs15lwi22and
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
+/home/linux/ieng6/cs15lwi22/cs15lwi22and
+[cs15lwi22and@ieng6-203]:~:111$ exit #6 Keystrokes
+logout
+Connection to ieng6.ucsd.edu closed.
+Dylans-Mac-Book-Pro:week1 yujiwei$
+```
 
 
 
