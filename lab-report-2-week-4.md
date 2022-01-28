@@ -12,11 +12,10 @@
 2. [Link to failure-inducing input file](test-file/test-file.md)
 
 3. Symptom of the failure-inducing input
-- The symptom is that there will be an infinite loop because the mthods indexOf() cannot find the next opening parenthesis because it is before a closing bracket. Therefore the currentIndex will be set to -1, and the while loop execute forever.
+- The symptom is that there will be an infinite loop because the mthods indexOf() cannot find the next opening parenthesis if there is no link at all. Therefore, it will throw an Index Out Of Bounds Exception because the Substring() methods cannot find index at -1.
 
 4. Explanation
-- Therefore, our first solution is fairly simple, make the program break when encounter a problem that the parenthesis is inside the square brackets shown in line 17. When we cannot find the next open bracket. By this way the loop can be stop and it will return an empty list. It makes the codes executable, but it is still not the desire output that we want.
-
+- Our first solution is fairly simple, make the program break when encounter a problem that the while loop will stop when we cannot find open parenthesis shown in line 17. By this way the loop can be stop and it will return an empty list. It makes the codes executable, but still not all the problems are being solved.
 
 # **Second Code Change**
 
