@@ -6,7 +6,7 @@
 # **First Code Change**
 1. Screenshot of the first code changez
 <p align="center">
-  <img width="430" height="300" src="images/lab-week4-1.png">
+  <img width="500" height="80" src="images/lab-week4-p1.png">
 </p>
 
 2. [Link to failure-inducing input file](test-file/test-file.md)
@@ -21,7 +21,7 @@
 
 1. Screenshot of the first code change
 <p align="center">
-  <img width="430" height="300" src="images/lab-week4-2.png">
+  <img width="500" height="200" src="images/lab-week4-p2.png">
 </p>
 
 2. [Link to failure-inducing input file](test-file/test-file.md)
