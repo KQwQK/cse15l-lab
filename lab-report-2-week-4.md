@@ -6,7 +6,7 @@
 # **First Code Change**
 1. Screenshot of the first code change
 <p align="center">
-  <img width="600" height="100" src="images/lab-week4-p1.PNG">
+  <img width="650" height="100" src="images/lab-week4-p1.PNG">
 </p>
 
 2. [Link to failure-inducing input file](test-file/test-file.md)
@@ -31,7 +31,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 1. Screenshot of the first code change
 <p align="center">
-  <img width="500" height="200" src="images/lab-week4-p2.PNG">
+  <img width="600" height="150" src="images/lab-week4-p2.PNG">
 </p>
 
 2. [Link to failure-inducing input file](test-file/test-file2.md)
