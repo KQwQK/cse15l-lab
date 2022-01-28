@@ -12,7 +12,17 @@
 2. [Link to failure-inducing input file](test-file/test-file.md)
 
 3. Symptom of the failure-inducing input
-- The symptom is that there will be an infinite loop because the mthods indexOf() cannot find the next opening parenthesis if there is no link at all. Therefore, it will throw an Index Out Of Bounds Exception because the Substring() methods cannot find index at -1.
+- The error message is: 
+```
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 2
+        at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+        at java.base/java.lang.String.substring(String.java:2704)
+        at MarkdownParse.getLinks(MarkdownParse.java:22)
+        at MarkdownParse.main(MarkdownParse.java:31)
+
+```
+
+- The symptom is that it will throw an Index Out Of Bounds Exception because the Substring() methods cannot find index at -1. The index is -1 because there is no link at all to look for. It will utimately result in a crash of the program.
 
 4. Explanation
 - Our first solution is fairly simple, make the program break when encounter a problem that the while loop will stop when we cannot find open parenthesis shown in line 17. By this way the loop can be stop and it will return an empty list. It makes the codes executable, but still not all the problems are being solved.
