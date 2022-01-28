@@ -58,7 +58,7 @@ This symptom of this test file is that we will have an infinite loop because the
 </p>
 
 
-2. [Link to failure-inducing input file](test-file/test-file3.md)
+2. [Link to failure-inducing input file](https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/lab-week4-p3.PNG)
 
 3. Symptom of the failure-inducing input:
 - This is not what we expected:
