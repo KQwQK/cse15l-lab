@@ -13,6 +13,7 @@
 
 3. Symptom of the failure-inducing input
 - The error message is: 
+
 ```
 Dylans-Mac-Book-Pro:week2 yujiwei$ javac MarkdownParse.java 
 Dylans-Mac-Book-Pro:week2 yujiwei$ java MarkdownParse test-file.md 
@@ -24,8 +25,12 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 ```
 
+
+
 4. Explanation
 - The symptom is that it will throw an Index Out Of Bounds Exception because the Substring() methods cannot find index at -1. The index is -1 because in the inducing input it is only an empty brackets and there is no link at all to look for. It will utimately result in a crash of the program which causes a bug that the program cannot run correctly. Our first solution is fairly simple, make the program break when encounter a problem that the while loop will stop when we cannot find open parenthesis shown in line 18. By this way the loop can be stop and it will return an empty list. It makes the codes executable, but still not all the problems are being solved.
+
+
 
 # **Second Code Change**
 
@@ -38,6 +43,8 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 3. Symptom of the failure-inducing input:
 - The error message is:
+
+
 ```
 Dylans-Mac-Book-Pro:week2 yujiwei$ javac MarkdownParse.java 
 Dylans-Mac-Book-Pro:week2 yujiwei$ java MarkdownParse test-file2.md 
@@ -62,6 +69,7 @@ This symptom of this test file is that we will have an infinite loop because the
 
 3. Symptom of the failure-inducing input:
 - This is not what we expected:
+
 ```
 Dylans-Mac-Book-Pro:week2 yujiwei$ javac MarkdownParse.java 
 Dylans-Mac-Book-Pro:week2 yujiwei$ java MarkdownParse test-file3.md 
