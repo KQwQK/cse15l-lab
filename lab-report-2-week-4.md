@@ -6,10 +6,10 @@
 # **First Code Change**
 1. Screenshot of the first code change
 <p align="center">
-  <img width="600" height="100" src="images/lab-week4-p1.png">
+  <img width="600" height="100" src="images/lab-week4-p1.PNG">
 </p>
 
-2. [Link to failure-inducing input file](https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/lab-week4-p1.PNG)
+2. [Link to failure-inducing input file](test-file/test-file.md)
 
 3. Symptom of the failure-inducing input
 - The error message is: 
@@ -31,10 +31,10 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 1. Screenshot of the first code change
 <p align="center">
-  <img width="500" height="200" src="images/lab-week4-p2.png">
+  <img width="500" height="200" src="images/lab-week4-p2.PNG">
 </p>
 
-2. [Link to failure-inducing input file](https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/lab-week4-p2.PNG)
+2. [Link to failure-inducing input file](test-file/test-file2.md)
 
 3. Symptom of the failure-inducing input:
 - The error message is:
@@ -54,11 +54,11 @@ This symptom of this test file is that we will have an infinite loop because the
 
 1. Screenshot of the first code change
 <p align="center">
-  <img width="700" height="200" src="images/lab-week4-p3.png">
+  <img width="700" height="200" src="images/lab-week4-p3.PNG">
 </p>
 
 
-2. [Link to failure-inducing input file](https://github.com/KQwQK/cse15l-lab-reports/blob/main/images/lab-week4-p3.PNG)
+2. [Link to failure-inducing input file](test-file/test-file3.md)
 
 3. Symptom of the failure-inducing input:
 - This is not what we expected:
