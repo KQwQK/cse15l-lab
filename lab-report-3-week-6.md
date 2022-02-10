@@ -46,7 +46,7 @@ By quitting the insert mode and typing ```:wq```, to save the ```config``` file 
 # **Result 1: Showing the ```ssh``` command logging you into my account**
 Now we can login only using ```ssh ieng6```
 <p align="center">
-  <img width="500" height="170" src="images/lab-week6-p2.PNG">
+  <img width="500" height="170" src="images/lab-week6-p2.png">
 </p>
 
 
